@@ -35,7 +35,6 @@
             this.tb_phone = new System.Windows.Forms.TextBox();
             this.btn_register = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tb_user = new System.Windows.Forms.TextBox();
             this.tb_pwd = new System.Windows.Forms.TextBox();
@@ -46,9 +45,10 @@
             this.btn_login = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tb_item = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +63,7 @@
             // 
             // btn_getphone
             // 
-            this.btn_getphone.Location = new System.Drawing.Point(26, 29);
+            this.btn_getphone.Location = new System.Drawing.Point(26, 34);
             this.btn_getphone.Name = "btn_getphone";
             this.btn_getphone.Size = new System.Drawing.Size(83, 28);
             this.btn_getphone.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(26, 65);
+            this.button1.Location = new System.Drawing.Point(26, 66);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 28);
             this.button1.TabIndex = 3;
@@ -83,21 +83,23 @@
             // 
             // tb_verifycode
             // 
-            this.tb_verifycode.Location = new System.Drawing.Point(126, 69);
+            this.tb_verifycode.Location = new System.Drawing.Point(115, 68);
+            this.tb_verifycode.Multiline = true;
             this.tb_verifycode.Name = "tb_verifycode";
-            this.tb_verifycode.Size = new System.Drawing.Size(136, 21);
+            this.tb_verifycode.Size = new System.Drawing.Size(136, 26);
             this.tb_verifycode.TabIndex = 4;
             // 
             // tb_phone
             // 
-            this.tb_phone.Location = new System.Drawing.Point(126, 33);
+            this.tb_phone.Location = new System.Drawing.Point(115, 36);
+            this.tb_phone.Multiline = true;
             this.tb_phone.Name = "tb_phone";
-            this.tb_phone.Size = new System.Drawing.Size(136, 21);
+            this.tb_phone.Size = new System.Drawing.Size(136, 26);
             this.tb_phone.TabIndex = 5;
             // 
             // btn_register
             // 
-            this.btn_register.Location = new System.Drawing.Point(26, 30);
+            this.btn_register.Location = new System.Drawing.Point(26, 19);
             this.btn_register.Name = "btn_register";
             this.btn_register.Size = new System.Drawing.Size(106, 28);
             this.btn_register.TabIndex = 6;
@@ -107,6 +109,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.tb_item);
             this.groupBox1.Controls.Add(this.btn_login);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.tb_token);
@@ -114,33 +118,20 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.tb_pwd);
             this.groupBox1.Controls.Add(this.tb_user);
-            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.btn_getphone);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.tb_phone);
             this.groupBox1.Controls.Add(this.tb_verifycode);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(776, 116);
+            this.groupBox1.Size = new System.Drawing.Size(776, 122);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "接码";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(711, 61);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(42, 28);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "余额";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.btn_register);
@@ -153,7 +144,7 @@
             // 
             // tb_user
             // 
-            this.tb_user.Location = new System.Drawing.Point(560, 20);
+            this.tb_user.Location = new System.Drawing.Point(560, 12);
             this.tb_user.Name = "tb_user";
             this.tb_user.Size = new System.Drawing.Size(136, 21);
             this.tb_user.TabIndex = 7;
@@ -161,7 +152,7 @@
             // 
             // tb_pwd
             // 
-            this.tb_pwd.Location = new System.Drawing.Point(560, 47);
+            this.tb_pwd.Location = new System.Drawing.Point(560, 39);
             this.tb_pwd.Name = "tb_pwd";
             this.tb_pwd.Size = new System.Drawing.Size(136, 21);
             this.tb_pwd.TabIndex = 8;
@@ -170,7 +161,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(508, 28);
+            this.label1.Location = new System.Drawing.Point(508, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 9;
@@ -179,7 +170,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(508, 52);
+            this.label2.Location = new System.Drawing.Point(508, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 10;
@@ -187,7 +178,7 @@
             // 
             // tb_token
             // 
-            this.tb_token.Location = new System.Drawing.Point(560, 74);
+            this.tb_token.Location = new System.Drawing.Point(560, 66);
             this.tb_token.Name = "tb_token";
             this.tb_token.Size = new System.Drawing.Size(136, 21);
             this.tb_token.TabIndex = 11;
@@ -195,7 +186,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(508, 77);
+            this.label3.Location = new System.Drawing.Point(508, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 12;
@@ -203,17 +194,18 @@
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(711, 20);
+            this.btn_login.Location = new System.Drawing.Point(711, 12);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(42, 28);
             this.btn_login.TabIndex = 13;
             this.btn_login.Text = "登录";
             this.btn_login.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.Btn_login_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(26, 64);
+            this.button4.Location = new System.Drawing.Point(26, 60);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(106, 29);
             this.button4.TabIndex = 8;
@@ -229,18 +221,9 @@
             this.button2.Text = "修改资料";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(193, 30);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(106, 29);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "更换本地IP";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(193, 65);
+            this.button6.Location = new System.Drawing.Point(26, 140);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(106, 29);
             this.button6.TabIndex = 11;
@@ -255,6 +238,23 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "浏览器";
+            // 
+            // tb_item
+            // 
+            this.tb_item.Location = new System.Drawing.Point(560, 93);
+            this.tb_item.Name = "tb_item";
+            this.tb_item.Size = new System.Drawing.Size(136, 21);
+            this.tb_item.TabIndex = 14;
+            this.tb_item.Text = "15231";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(508, 96);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 12);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "项目：";
             // 
             // Form1
             // 
@@ -290,14 +290,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_pwd;
         private System.Windows.Forms.TextBox tb_user;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tb_item;
     }
 }
 
