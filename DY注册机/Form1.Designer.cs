@@ -33,7 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tb_verifycode = new System.Windows.Forms.TextBox();
             this.tb_phone = new System.Windows.Forms.TextBox();
-            this.btn_register = new System.Windows.Forms.Button();
+            this.btn_getcode = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tb_user = new System.Windows.Forms.TextBox();
@@ -49,6 +49,9 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tb_item = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btn_reg = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -91,21 +94,21 @@
             // 
             // tb_phone
             // 
-            this.tb_phone.Location = new System.Drawing.Point(115, 36);
+            this.tb_phone.Location = new System.Drawing.Point(115, 34);
             this.tb_phone.Multiline = true;
             this.tb_phone.Name = "tb_phone";
             this.tb_phone.Size = new System.Drawing.Size(136, 26);
             this.tb_phone.TabIndex = 5;
             // 
-            // btn_register
+            // btn_getcode
             // 
-            this.btn_register.Location = new System.Drawing.Point(26, 19);
-            this.btn_register.Name = "btn_register";
-            this.btn_register.Size = new System.Drawing.Size(106, 28);
-            this.btn_register.TabIndex = 6;
-            this.btn_register.Text = "获取短信验证码";
-            this.btn_register.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_register.UseVisualStyleBackColor = true;
+            this.btn_getcode.Location = new System.Drawing.Point(26, 19);
+            this.btn_getcode.Name = "btn_getcode";
+            this.btn_getcode.Size = new System.Drawing.Size(106, 28);
+            this.btn_getcode.TabIndex = 6;
+            this.btn_getcode.Text = "获取短信验证码";
+            this.btn_getcode.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_getcode.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -131,10 +134,13 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.btn_reg);
             this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.btn_register);
+            this.groupBox2.Controls.Add(this.btn_getcode);
             this.groupBox2.Location = new System.Drawing.Point(12, 134);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(404, 180);
@@ -214,7 +220,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(26, 99);
+            this.button2.Location = new System.Drawing.Point(26, 145);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 29);
             this.button2.TabIndex = 9;
@@ -223,7 +229,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(26, 140);
+            this.button6.Location = new System.Drawing.Point(213, 20);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(106, 29);
             this.button6.TabIndex = 11;
@@ -256,6 +262,33 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "项目：";
             // 
+            // btn_reg
+            // 
+            this.btn_reg.Location = new System.Drawing.Point(26, 104);
+            this.btn_reg.Name = "btn_reg";
+            this.btn_reg.Size = new System.Drawing.Size(106, 29);
+            this.btn_reg.TabIndex = 12;
+            this.btn_reg.Text = "注册";
+            this.btn_reg.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(213, 60);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(106, 29);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "登录验证码";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(213, 104);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(106, 29);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "更改本机";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -282,7 +315,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox tb_verifycode;
         private System.Windows.Forms.TextBox tb_phone;
-        private System.Windows.Forms.Button btn_register;
+        private System.Windows.Forms.Button btn_getcode;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_token;
@@ -298,6 +331,9 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tb_item;
+        private System.Windows.Forms.Button btn_reg;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
     }
 }
 
